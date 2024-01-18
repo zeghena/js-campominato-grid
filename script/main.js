@@ -25,9 +25,13 @@ generateGrid(gameBordElement)
 
 function generateGrid (container){
     console.log(container)
-    for(i = 0; i <= 100; i ++){
+    for(i = 0; i < 100; i ++){
+
         const cellElement = generateCell();
+        cellElement.innerHTML = i
+
         container.append(cellElement);
+
 
     }
 }
