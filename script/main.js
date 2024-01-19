@@ -12,15 +12,6 @@ generateGrid(gameBordElement)
 
 
 
-
-
-
-
-
-
-
-
-
 // #### creo la funzione
 
 function generateGrid (container){
@@ -43,3 +34,16 @@ function generateCell(){
 
     return cell;
 }
+
+const bombsNumbers = []
+
+
+while(bombsNumbers.length < 16){
+    let number = Math.floor((Math.random()* 100)+1);
+    if(bombsNumbers.includes(number)){
+        bombsNumbers.push(number);
+    }
+
+}
+
+console.log(bombsNumbers)
