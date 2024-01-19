@@ -33,6 +33,8 @@ function generateCell(){
     cell.classList.add("box");
 
     return cell;
+
+    
 }
 
 const bombsNumbers = []
